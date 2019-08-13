@@ -1,0 +1,942 @@
+.
+├── config
+│   ├── builder-nginx.conf
+│   ├── certs
+│   │   ├── c.lock
+│   │   ├── crawler.ini
+│   │   ├── crw.lock
+│   │   ├── jwt
+│   │   │   ├── jwt.cert
+│   │   │   ├── jwt.jks
+│   │   │   └── jwt_public.pem
+│   │   └── ssl
+│   │       ├── cert.crt
+│   │       └── cert.key
+│   ├── custom
+│   │   └── crawler
+│   ├── log_rotate.conf
+│   ├── logging.properties
+│   ├── login-permissions.conf
+│   ├── miner-nginx.conf
+│   ├── settings.ini
+│   └── usermgmt
+│       └── custom_ldap_config.xml
+├── couchdb
+│   ├── _dbs.couch
+│   ├── _global_changes.couch
+│   ├── _nodes.couch
+│   ├── _replicator.couch
+│   ├── _users.couch
+│   ├── appbuilder.couch
+│   ├── backends.couch
+│   ├── configurations.couch
+│   ├── datasources.couch
+│   ├── images.couch
+│   ├── preferences.couch
+│   ├── projects.couch
+│   ├── shards
+│   │   ├── 00000000-1fffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── 20000000-3fffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── 40000000-5fffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── 60000000-7fffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── 80000000-9fffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── a0000000-bfffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   ├── c0000000-dfffffff
+│   │   │   ├── cm__dashboard.1565265761.couch
+│   │   │   └── cm__saved_reports.1565265811.couch
+│   │   └── e0000000-ffffffff
+│   │       ├── cm__dashboard.1565265761.couch
+│   │       └── cm__saved_reports.1565265811.couch
+│   ├── templates_adapters.couch
+│   ├── templates_frames.couch
+│   ├── templates_pages.couch
+│   ├── templates_result_details.couch
+│   ├── templates_result_details_samples.couch
+│   ├── templates_result_list.couch
+│   ├── templates_result_list_samples.couch
+│   ├── templates_widget.couch
+│   ├── templates_widget_samples.couch
+│   ├── wex_audit.couch
+│   ├── wex_connection_profile.couch
+│   ├── wex_dlsecurity.couch
+│   ├── wex_group.couch
+│   ├── wex_log.couch
+│   ├── wex_spark.couch
+│   ├── wex_user.couch
+│   └── widgets.couch
+├── dataset
+│   ├── e8d1c521-b10b-f9be-0000-016c70da1527
+│   │   └── 2019
+│   │       └── 220
+│   │           └── 11
+│   │               └── i_16702_1565262108682.parquet
+│   └── e8d1c521-b10b-f9be-0000-016c70f492a9
+│       └── 2019
+│           └── 220
+│               └── 11
+│                   └── i_18356_1565263315641.parquet
+├── docproclog
+│   ├── e8d1c521-b10b-f9be-0000-016c711201d4
+│   │   └── e8d1c521-b10b-f9be-0000-016c70da1527
+│   │       └── 2019
+│   │           └── 220
+│   │               └── 11
+│   │                   ├── l_0_1565265176726.parquet
+│   │                   └── l_1_1565265177715.parquet
+│   └── e8d1c521-b10b-f9be-0000-016c7117d914
+│       └── e8d1c521-b10b-f9be-0000-016c70f492a9
+│           └── 2019
+│               └── 220
+│                   └── 11
+│                       └── l_0_1565265524245.parquet
+├── dpe_raw
+│   ├── e8d1c521-b10b-f9be-0000-016c711201d4
+│   │   └── e8d1c521-b10b-f9be-0000-016c70da1527
+│   │       └── 2019
+│   │           └── 220
+│   │               └── 11
+│   └── e8d1c521-b10b-f9be-0000-016c7117d914
+│       └── e8d1c521-b10b-f9be-0000-016c70f492a9
+│           └── 2019
+│               └── 220
+│                   └── 11
+├── logs
+│   ├── appbuilder
+│   │   ├── api-server-error.log
+│   │   ├── api-server.log
+│   │   ├── appbuilder.log
+│   │   ├── data-server-error.log
+│   │   ├── data-server.log
+│   │   └── data.log
+│   ├── audit_172.17.0.3_orchestrator_00.json
+│   ├── audit_172.17.0.3_usermgmt_00.json
+│   ├── audit_172.17.0.3_wlp_00.json
+│   ├── cmd.log
+│   ├── cmd.log.1
+│   ├── couchdb
+│   │   ├── couch.log
+│   │   └── couch.log.1
+│   ├── dclustering
+│   │   ├── solr-8984-console.log
+│   │   ├── solr.log
+│   │   ├── solr.log.1
+│   │   ├── solr.log.2
+│   │   ├── solr.log.3
+│   │   ├── solr.log.4
+│   │   ├── solr.log.5
+│   │   ├── solr_gc.log
+│   │   └── solr_slow_requests.log
+│   ├── dump
+│   │   └── solr
+│   ├── fluentd.log
+│   ├── fluentd.log.1
+│   ├── log_172.17.0.3_discovery_00.json
+│   ├── log_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70e239ae_00.json
+│   ├── log_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70f609a1_00.json
+│   ├── logstate
+│   ├── nginx
+│   │   ├── access.log
+│   │   └── error.log
+│   ├── nlp
+│   │   ├── 0b6f0c800401
+│   │   │   └── messages.log
+│   │   ├── 48aa4d0ca820
+│   │   │   └── messages.log
+│   │   ├── 4939300f4044
+│   │   │   └── messages.log
+│   │   ├── 9cd71cb62279
+│   │   │   └── messages.log
+│   │   ├── b07a283ec410
+│   │   │   └── messages.log
+│   │   └── fd5f5ac28059
+│   │       └── messages.log
+│   ├── orchestrator
+│   │   ├── messages.log
+│   │   └── messages_19.08.09_01.16.36.0.log
+│   ├── sire
+│   │   ├── sire
+│   │   └── wlp
+│   ├── solr
+│   ├── solr2
+│   │   ├── 0b6f0c800401
+│   │   │   ├── solr-8983-console.log
+│   │   │   ├── solr.log
+│   │   │   ├── solr_gc.log
+│   │   │   └── solr_slow_requests.log
+│   │   ├── 48aa4d0ca820
+│   │   │   ├── solr-8983-console.log
+│   │   │   ├── solr.log
+│   │   │   ├── solr_gc.log
+│   │   │   └── solr_slow_requests.log
+│   │   ├── 4939300f4044
+│   │   │   ├── solr-8983-console.log
+│   │   │   ├── solr.log
+│   │   │   ├── solr_gc.log
+│   │   │   └── solr_slow_requests.log
+│   │   ├── 9cd71cb62279
+│   │   │   ├── solr-8983-console.log
+│   │   │   ├── solr.log
+│   │   │   ├── solr_gc.log
+│   │   │   └── solr_slow_requests.log
+│   │   ├── b07a283ec410
+│   │   │   ├── solr-8983-console.log
+│   │   │   ├── solr.log
+│   │   │   ├── solr_gc.log
+│   │   │   └── solr_slow_requests.log
+│   │   └── fd5f5ac28059
+│   │       ├── solr-8983-console.log
+│   │       ├── solr.log
+│   │       ├── solr_gc.log
+│   │       └── solr_slow_requests.log
+│   ├── spark
+│   │   ├── DOCPROC_e8d1c521-b10b-f9be-0000-016c711201d4_e8d1c521-b10b-f9be-0000-016c70da1527_1565265131209
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   ├── DOCPROC_e8d1c521-b10b-f9be-0000-016c7117d914_e8d1c521-b10b-f9be-0000-016c70f492a9_1565265491262
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   ├── DOCSTATS1565262112568
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   ├── DOCSTATS1565263320650
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   ├── DPLOG1565265292922
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   ├── DPLOG1565265915177
+│   │   │   ├── stderr
+│   │   │   └── stdout
+│   │   └── DSMET1565306393495
+│   │       ├── stderr
+│   │       └── stdout
+│   ├── trace_172.17.0.3_controller_00.json
+│   ├── trace_172.17.0.3_discovery_00.json
+│   ├── trace_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70da1527-e8d1c521-b10b-f9be-0000-016c70e239ae_00.json
+│   ├── trace_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70e239ae_00.json
+│   ├── trace_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70f492a9-e8d1c521-b10b-f9be-0000-016c70f609a1_00.json
+│   ├── trace_172.17.0.3_e8d1c521-b10b-f9be-0000-016c70f609a1_00.json
+│   ├── trace_172.17.0.3_nlp-runtime-_discovery_col_00.json
+│   ├── trace_172.17.0.3_nlp_00.json
+│   ├── trace_172.17.0.3_orchestrator_00.json
+│   ├── trace_172.17.0.3_usermgmt_00.json
+│   ├── trace_172.17.0.3_wlp_00.json
+│   ├── usermgmt
+│   │   ├── 0b6f0c800401
+│   │   │   └── messages.log
+│   │   ├── 48aa4d0ca820
+│   │   │   └── messages.log
+│   │   ├── 4939300f4044
+│   │   │   └── messages.log
+│   │   ├── 9cd71cb62279
+│   │   │   ├── messages.log
+│   │   │   └── messages_19.08.08_06.16.13.0.log
+│   │   ├── b07a283ec410
+│   │   │   └── messages.log
+│   │   └── fd5f5ac28059
+│   │       └── messages.log
+│   ├── wlp
+│   │   ├── 0b6f0c800401
+│   │   │   └── messages.log
+│   │   ├── 48aa4d0ca820
+│   │   │   └── messages.log
+│   │   ├── 4939300f4044
+│   │   │   └── messages.log
+│   │   ├── 9cd71cb62279
+│   │   │   └── messages.log
+│   │   ├── b07a283ec410
+│   │   │   └── messages.log
+│   │   └── fd5f5ac28059
+│   │       └── messages.log
+│   ├── zing
+│   │   └── derby.log
+│   └── zookeeper
+│       └── zookeeper.out
+├── management
+│   └── global
+│       └── fileResource
+│           ├── 701db916-fc83-57ab-0000-000000000001
+│           │   └── content
+│           │       └── 701db916-fc83-57ab-0000-000000000001
+│           ├── 701db916-fc83-57ab-0000-000000000007
+│           │   └── content
+│           │       └── 701db916-fc83-57ab-0000-000000000007
+│           └── 701db916-fc83-57ab-0000-000000000009
+│               └── content
+│                   └── 701db916-fc83-57ab-0000-000000000009
+├── mt
+│   └── nlp
+│       └── 2019
+│           └── 220
+│               ├── 11
+│               └── 12
+├── solr
+│   ├── README.txt
+│   ├── _errdoc_shard1_replica_n1
+│   │   ├── core.properties
+│   │   └── data
+│   │       ├── index
+│   │       │   ├── segments_1
+│   │       │   └── write.lock
+│   │       ├── snapshot_metadata
+│   │       └── tlog
+│   ├── configsets
+│   │   ├── _default
+│   │   │   └── conf
+│   │   │       ├── lang
+│   │   │       │   ├── contractions_ca.txt
+│   │   │       │   ├── contractions_fr.txt
+│   │   │       │   ├── contractions_ga.txt
+│   │   │       │   ├── contractions_it.txt
+│   │   │       │   ├── hyphenations_ga.txt
+│   │   │       │   ├── stemdict_nl.txt
+│   │   │       │   ├── stoptags_ja.txt
+│   │   │       │   ├── stopwords_ar.txt
+│   │   │       │   ├── stopwords_bg.txt
+│   │   │       │   ├── stopwords_ca.txt
+│   │   │       │   ├── stopwords_cz.txt
+│   │   │       │   ├── stopwords_da.txt
+│   │   │       │   ├── stopwords_de.txt
+│   │   │       │   ├── stopwords_el.txt
+│   │   │       │   ├── stopwords_en.txt
+│   │   │       │   ├── stopwords_es.txt
+│   │   │       │   ├── stopwords_eu.txt
+│   │   │       │   ├── stopwords_fa.txt
+│   │   │       │   ├── stopwords_fi.txt
+│   │   │       │   ├── stopwords_fr.txt
+│   │   │       │   ├── stopwords_ga.txt
+│   │   │       │   ├── stopwords_gl.txt
+│   │   │       │   ├── stopwords_hi.txt
+│   │   │       │   ├── stopwords_hu.txt
+│   │   │       │   ├── stopwords_hy.txt
+│   │   │       │   ├── stopwords_id.txt
+│   │   │       │   ├── stopwords_it.txt
+│   │   │       │   ├── stopwords_ja.txt
+│   │   │       │   ├── stopwords_lv.txt
+│   │   │       │   ├── stopwords_nl.txt
+│   │   │       │   ├── stopwords_no.txt
+│   │   │       │   ├── stopwords_pt.txt
+│   │   │       │   ├── stopwords_ro.txt
+│   │   │       │   ├── stopwords_ru.txt
+│   │   │       │   ├── stopwords_sv.txt
+│   │   │       │   ├── stopwords_th.txt
+│   │   │       │   ├── stopwords_tr.txt
+│   │   │       │   └── userdict_ja.txt
+│   │   │       ├── managed-schema
+│   │   │       ├── params.json
+│   │   │       ├── protwords.txt
+│   │   │       ├── solrconfig.xml
+│   │   │       ├── stopwords.txt
+│   │   │       └── synonyms.txt
+│   │   └── sample_techproducts_configs
+│   │       └── conf
+│   │           ├── _rest_managed.json
+│   │           ├── _schema_analysis_stopwords_english.json
+│   │           ├── _schema_analysis_synonyms_english.json
+│   │           ├── clustering
+│   │           │   └── carrot2
+│   │           │       ├── README.txt
+│   │           │       ├── kmeans-attributes.xml
+│   │           │       ├── lingo-attributes.xml
+│   │           │       └── stc-attributes.xml
+│   │           ├── currency.xml
+│   │           ├── elevate.xml
+│   │           ├── lang
+│   │           │   ├── contractions_ca.txt
+│   │           │   ├── contractions_fr.txt
+│   │           │   ├── contractions_ga.txt
+│   │           │   ├── contractions_it.txt
+│   │           │   ├── hyphenations_ga.txt
+│   │           │   ├── stemdict_nl.txt
+│   │           │   ├── stoptags_ja.txt
+│   │           │   ├── stopwords_ar.txt
+│   │           │   ├── stopwords_bg.txt
+│   │           │   ├── stopwords_ca.txt
+│   │           │   ├── stopwords_ckb.txt
+│   │           │   ├── stopwords_cz.txt
+│   │           │   ├── stopwords_da.txt
+│   │           │   ├── stopwords_de.txt
+│   │           │   ├── stopwords_el.txt
+│   │           │   ├── stopwords_en.txt
+│   │           │   ├── stopwords_es.txt
+│   │           │   ├── stopwords_eu.txt
+│   │           │   ├── stopwords_fa.txt
+│   │           │   ├── stopwords_fi.txt
+│   │           │   ├── stopwords_fr.txt
+│   │           │   ├── stopwords_ga.txt
+│   │           │   ├── stopwords_gl.txt
+│   │           │   ├── stopwords_hi.txt
+│   │           │   ├── stopwords_hu.txt
+│   │           │   ├── stopwords_hy.txt
+│   │           │   ├── stopwords_id.txt
+│   │           │   ├── stopwords_it.txt
+│   │           │   ├── stopwords_ja.txt
+│   │           │   ├── stopwords_lv.txt
+│   │           │   ├── stopwords_nl.txt
+│   │           │   ├── stopwords_no.txt
+│   │           │   ├── stopwords_pt.txt
+│   │           │   ├── stopwords_ro.txt
+│   │           │   ├── stopwords_ru.txt
+│   │           │   ├── stopwords_sv.txt
+│   │           │   ├── stopwords_th.txt
+│   │           │   ├── stopwords_tr.txt
+│   │           │   └── userdict_ja.txt
+│   │           ├── managed-schema
+│   │           ├── mapping-FoldToASCII.txt
+│   │           ├── mapping-ISOLatin1Accent.txt
+│   │           ├── params.json
+│   │           ├── protwords.txt
+│   │           ├── solrconfig.xml
+│   │           ├── spellings.txt
+│   │           ├── stopwords.txt
+│   │           ├── synonyms.txt
+│   │           ├── update-script.js
+│   │           ├── velocity
+│   │           │   ├── README.txt
+│   │           │   ├── VM_global_library.vm
+│   │           │   ├── browse.vm
+│   │           │   ├── cluster.vm
+│   │           │   ├── cluster_results.vm
+│   │           │   ├── debug.vm
+│   │           │   ├── did_you_mean.vm
+│   │           │   ├── error.vm
+│   │           │   ├── facet_fields.vm
+│   │           │   ├── facet_pivot.vm
+│   │           │   ├── facet_queries.vm
+│   │           │   ├── facet_ranges.vm
+│   │           │   ├── facets.vm
+│   │           │   ├── footer.vm
+│   │           │   ├── head.vm
+│   │           │   ├── header.vm
+│   │           │   ├── hit.vm
+│   │           │   ├── hit_grouped.vm
+│   │           │   ├── hit_plain.vm
+│   │           │   ├── join_doc.vm
+│   │           │   ├── jquery.autocomplete.css
+│   │           │   ├── jquery.autocomplete.js
+│   │           │   ├── layout.vm
+│   │           │   ├── main.css
+│   │           │   ├── mime_type_lists.vm
+│   │           │   ├── pagination_bottom.vm
+│   │           │   ├── pagination_top.vm
+│   │           │   ├── product_doc.vm
+│   │           │   ├── query.vm
+│   │           │   ├── query_form.vm
+│   │           │   ├── query_group.vm
+│   │           │   ├── query_spatial.vm
+│   │           │   ├── results_list.vm
+│   │           │   ├── richtext_doc.vm
+│   │           │   ├── suggest.vm
+│   │           │   └── tabs.vm
+│   │           └── xslt
+│   │               ├── example.xsl
+│   │               ├── example_atom.xsl
+│   │               ├── example_rss.xsl
+│   │               ├── luke.xsl
+│   │               └── updateXml.xsl
+│   ├── e8d1c521-b10b-f9be-0000-016c711201d4_shard1_replica_n1
+│   │   ├── core.properties
+│   │   └── data
+│   │       ├── index
+│   │       │   ├── _0.dii
+│   │       │   ├── _0.dim
+│   │       │   ├── _0.fdt
+│   │       │   ├── _0.fdx
+│   │       │   ├── _0.fnm
+│   │       │   ├── _0.nvd
+│   │       │   ├── _0.nvm
+│   │       │   ├── _0.si
+│   │       │   ├── _0.tvd
+│   │       │   ├── _0.tvx
+│   │       │   ├── _0_Lucene50_0.doc
+│   │       │   ├── _0_Lucene50_0.pay
+│   │       │   ├── _0_Lucene50_0.pos
+│   │       │   ├── _0_Lucene50_0.tim
+│   │       │   ├── _0_Lucene50_0.tip
+│   │       │   ├── _0_Lucene70_0.dvd
+│   │       │   ├── _0_Lucene70_0.dvm
+│   │       │   ├── _0_Memory_0.mdvd
+│   │       │   ├── _0_Memory_0.mdvm
+│   │       │   ├── _1.dii
+│   │       │   ├── _1.dim
+│   │       │   ├── _1.fdt
+│   │       │   ├── _1.fdx
+│   │       │   ├── _1.fnm
+│   │       │   ├── _1.nvd
+│   │       │   ├── _1.nvm
+│   │       │   ├── _1.si
+│   │       │   ├── _1.tvd
+│   │       │   ├── _1.tvx
+│   │       │   ├── _1_Lucene50_0.doc
+│   │       │   ├── _1_Lucene50_0.pay
+│   │       │   ├── _1_Lucene50_0.pos
+│   │       │   ├── _1_Lucene50_0.tim
+│   │       │   ├── _1_Lucene50_0.tip
+│   │       │   ├── _1_Lucene70_0.dvd
+│   │       │   ├── _1_Lucene70_0.dvm
+│   │       │   ├── _1_Memory_0.mdvd
+│   │       │   ├── _1_Memory_0.mdvm
+│   │       │   └── segments_2
+│   │       ├── snapshot_metadata
+│   │       └── tlog
+│   │           └── tlog.0000000000000000000
+│   ├── e8d1c521-b10b-f9be-0000-016c7117d914_shard1_replica_n1
+│   │   ├── core.properties
+│   │   └── data
+│   │       ├── index
+│   │       │   ├── _0.dii
+│   │       │   ├── _0.dim
+│   │       │   ├── _0.fdt
+│   │       │   ├── _0.fdx
+│   │       │   ├── _0.fnm
+│   │       │   ├── _0.nvd
+│   │       │   ├── _0.nvm
+│   │       │   ├── _0.si
+│   │       │   ├── _0.tvd
+│   │       │   ├── _0.tvx
+│   │       │   ├── _0_Lucene50_0.doc
+│   │       │   ├── _0_Lucene50_0.pay
+│   │       │   ├── _0_Lucene50_0.pos
+│   │       │   ├── _0_Lucene50_0.tim
+│   │       │   ├── _0_Lucene50_0.tip
+│   │       │   ├── _0_Lucene70_0.dvd
+│   │       │   ├── _0_Lucene70_0.dvm
+│   │       │   ├── _0_Memory_0.mdvd
+│   │       │   ├── _0_Memory_0.mdvm
+│   │       │   ├── _1.dii
+│   │       │   ├── _1.dim
+│   │       │   ├── _1.fdt
+│   │       │   ├── _1.fdx
+│   │       │   ├── _1.fnm
+│   │       │   ├── _1.nvd
+│   │       │   ├── _1.nvm
+│   │       │   ├── _1.si
+│   │       │   ├── _1.tvd
+│   │       │   ├── _1.tvx
+│   │       │   ├── _1_Lucene50_0.doc
+│   │       │   ├── _1_Lucene50_0.pay
+│   │       │   ├── _1_Lucene50_0.pos
+│   │       │   ├── _1_Lucene50_0.tim
+│   │       │   ├── _1_Lucene50_0.tip
+│   │       │   ├── _1_Lucene70_0.dvd
+│   │       │   ├── _1_Lucene70_0.dvm
+│   │       │   ├── _1_Memory_0.mdvd
+│   │       │   ├── _1_Memory_0.mdvm
+│   │       │   └── segments_2
+│   │       ├── snapshot_metadata
+│   │       └── tlog
+│   │           └── tlog.0000000000000000000
+│   ├── lib
+│   ├── mycores
+│   ├── pear
+│   │   ├── pos-ais
+│   │   └── pos-pear
+│   ├── solr
+│   │   ├── README.txt
+│   │   ├── configsets
+│   │   │   ├── _default
+│   │   │   │   └── conf
+│   │   │   │       ├── lang
+│   │   │   │       │   ├── contractions_ca.txt
+│   │   │   │       │   ├── contractions_fr.txt
+│   │   │   │       │   ├── contractions_ga.txt
+│   │   │   │       │   ├── contractions_it.txt
+│   │   │   │       │   ├── hyphenations_ga.txt
+│   │   │   │       │   ├── stemdict_nl.txt
+│   │   │   │       │   ├── stoptags_ja.txt
+│   │   │   │       │   ├── stopwords_ar.txt
+│   │   │   │       │   ├── stopwords_bg.txt
+│   │   │   │       │   ├── stopwords_ca.txt
+│   │   │   │       │   ├── stopwords_cz.txt
+│   │   │   │       │   ├── stopwords_da.txt
+│   │   │   │       │   ├── stopwords_de.txt
+│   │   │   │       │   ├── stopwords_el.txt
+│   │   │   │       │   ├── stopwords_en.txt
+│   │   │   │       │   ├── stopwords_es.txt
+│   │   │   │       │   ├── stopwords_eu.txt
+│   │   │   │       │   ├── stopwords_fa.txt
+│   │   │   │       │   ├── stopwords_fi.txt
+│   │   │   │       │   ├── stopwords_fr.txt
+│   │   │   │       │   ├── stopwords_ga.txt
+│   │   │   │       │   ├── stopwords_gl.txt
+│   │   │   │       │   ├── stopwords_hi.txt
+│   │   │   │       │   ├── stopwords_hu.txt
+│   │   │   │       │   ├── stopwords_hy.txt
+│   │   │   │       │   ├── stopwords_id.txt
+│   │   │   │       │   ├── stopwords_it.txt
+│   │   │   │       │   ├── stopwords_ja.txt
+│   │   │   │       │   ├── stopwords_lv.txt
+│   │   │   │       │   ├── stopwords_nl.txt
+│   │   │   │       │   ├── stopwords_no.txt
+│   │   │   │       │   ├── stopwords_pt.txt
+│   │   │   │       │   ├── stopwords_ro.txt
+│   │   │   │       │   ├── stopwords_ru.txt
+│   │   │   │       │   ├── stopwords_sv.txt
+│   │   │   │       │   ├── stopwords_th.txt
+│   │   │   │       │   ├── stopwords_tr.txt
+│   │   │   │       │   └── userdict_ja.txt
+│   │   │   │       ├── managed-schema
+│   │   │   │       ├── params.json
+│   │   │   │       ├── protwords.txt
+│   │   │   │       ├── solrconfig.xml
+│   │   │   │       ├── stopwords.txt
+│   │   │   │       └── synonyms.txt
+│   │   │   └── sample_techproducts_configs
+│   │   │       └── conf
+│   │   │           ├── _rest_managed.json
+│   │   │           ├── _schema_analysis_stopwords_english.json
+│   │   │           ├── _schema_analysis_synonyms_english.json
+│   │   │           ├── clustering
+│   │   │           │   └── carrot2
+│   │   │           │       ├── README.txt
+│   │   │           │       ├── kmeans-attributes.xml
+│   │   │           │       ├── lingo-attributes.xml
+│   │   │           │       └── stc-attributes.xml
+│   │   │           ├── currency.xml
+│   │   │           ├── elevate.xml
+│   │   │           ├── lang
+│   │   │           │   ├── contractions_ca.txt
+│   │   │           │   ├── contractions_fr.txt
+│   │   │           │   ├── contractions_ga.txt
+│   │   │           │   ├── contractions_it.txt
+│   │   │           │   ├── hyphenations_ga.txt
+│   │   │           │   ├── stemdict_nl.txt
+│   │   │           │   ├── stoptags_ja.txt
+│   │   │           │   ├── stopwords_ar.txt
+│   │   │           │   ├── stopwords_bg.txt
+│   │   │           │   ├── stopwords_ca.txt
+│   │   │           │   ├── stopwords_ckb.txt
+│   │   │           │   ├── stopwords_cz.txt
+│   │   │           │   ├── stopwords_da.txt
+│   │   │           │   ├── stopwords_de.txt
+│   │   │           │   ├── stopwords_el.txt
+│   │   │           │   ├── stopwords_en.txt
+│   │   │           │   ├── stopwords_es.txt
+│   │   │           │   ├── stopwords_eu.txt
+│   │   │           │   ├── stopwords_fa.txt
+│   │   │           │   ├── stopwords_fi.txt
+│   │   │           │   ├── stopwords_fr.txt
+│   │   │           │   ├── stopwords_ga.txt
+│   │   │           │   ├── stopwords_gl.txt
+│   │   │           │   ├── stopwords_hi.txt
+│   │   │           │   ├── stopwords_hu.txt
+│   │   │           │   ├── stopwords_hy.txt
+│   │   │           │   ├── stopwords_id.txt
+│   │   │           │   ├── stopwords_it.txt
+│   │   │           │   ├── stopwords_ja.txt
+│   │   │           │   ├── stopwords_lv.txt
+│   │   │           │   ├── stopwords_nl.txt
+│   │   │           │   ├── stopwords_no.txt
+│   │   │           │   ├── stopwords_pt.txt
+│   │   │           │   ├── stopwords_ro.txt
+│   │   │           │   ├── stopwords_ru.txt
+│   │   │           │   ├── stopwords_sv.txt
+│   │   │           │   ├── stopwords_th.txt
+│   │   │           │   ├── stopwords_tr.txt
+│   │   │           │   └── userdict_ja.txt
+│   │   │           ├── managed-schema
+│   │   │           ├── mapping-FoldToASCII.txt
+│   │   │           ├── mapping-ISOLatin1Accent.txt
+│   │   │           ├── params.json
+│   │   │           ├── protwords.txt
+│   │   │           ├── solrconfig.xml
+│   │   │           ├── spellings.txt
+│   │   │           ├── stopwords.txt
+│   │   │           ├── synonyms.txt
+│   │   │           ├── update-script.js
+│   │   │           ├── velocity
+│   │   │           │   ├── README.txt
+│   │   │           │   ├── VM_global_library.vm
+│   │   │           │   ├── browse.vm
+│   │   │           │   ├── cluster.vm
+│   │   │           │   ├── cluster_results.vm
+│   │   │           │   ├── debug.vm
+│   │   │           │   ├── did_you_mean.vm
+│   │   │           │   ├── error.vm
+│   │   │           │   ├── facet_fields.vm
+│   │   │           │   ├── facet_pivot.vm
+│   │   │           │   ├── facet_queries.vm
+│   │   │           │   ├── facet_ranges.vm
+│   │   │           │   ├── facets.vm
+│   │   │           │   ├── footer.vm
+│   │   │           │   ├── head.vm
+│   │   │           │   ├── header.vm
+│   │   │           │   ├── hit.vm
+│   │   │           │   ├── hit_grouped.vm
+│   │   │           │   ├── hit_plain.vm
+│   │   │           │   ├── join_doc.vm
+│   │   │           │   ├── jquery.autocomplete.css
+│   │   │           │   ├── jquery.autocomplete.js
+│   │   │           │   ├── layout.vm
+│   │   │           │   ├── main.css
+│   │   │           │   ├── mime_type_lists.vm
+│   │   │           │   ├── pagination_bottom.vm
+│   │   │           │   ├── pagination_top.vm
+│   │   │           │   ├── product_doc.vm
+│   │   │           │   ├── query.vm
+│   │   │           │   ├── query_form.vm
+│   │   │           │   ├── query_group.vm
+│   │   │           │   ├── query_spatial.vm
+│   │   │           │   ├── results_list.vm
+│   │   │           │   ├── richtext_doc.vm
+│   │   │           │   ├── suggest.vm
+│   │   │           │   └── tabs.vm
+│   │   │           └── xslt
+│   │   │               ├── example.xsl
+│   │   │               ├── example_atom.xsl
+│   │   │               ├── example_rss.xsl
+│   │   │               ├── luke.xsl
+│   │   │               └── updateXml.xsl
+│   │   ├── lib
+│   │   ├── mycores
+│   │   ├── solr.xml
+│   │   └── zoo.cfg
+│   ├── solr.xml
+│   └── zoo.cfg
+├── zing
+│   ├── configs
+│   │   ├── e8d1c521-b10b-f9be-0000-016c70e239ae
+│   │   │   └── unixfscrawler.xml
+│   │   ├── e8d1c521-b10b-f9be-0000-016c70f609a1
+│   │   │   └── unixfscrawler.xml
+│   │   └── vault.xml
+│   └── data
+│       ├── converter
+│       │   ├── e8d1c521-b10b-f9be-0000-016c70da1527
+│       │   │   └── temp
+│       │   └── e8d1c521-b10b-f9be-0000-016c70f492a9
+│       │       └── temp
+│       ├── crawler
+│       │   ├── e8d1c521-b10b-f9be-0000-016c70e239ae
+│       │   │   ├── cdsr
+│       │   │   │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │   │   │   ├── db.lck
+│       │   │   │   ├── dbex.lck
+│       │   │   │   ├── log
+│       │   │   │   │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │   │   │   │   ├── log.ctrl
+│       │   │   │   │   ├── log1.dat
+│       │   │   │   │   └── logmirror.ctrl
+│       │   │   │   ├── seg0
+│       │   │   │   │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │   │   │   │   ├── c10.dat
+│       │   │   │   │   ├── c101.dat
+│       │   │   │   │   ├── c111.dat
+│       │   │   │   │   ├── c121.dat
+│       │   │   │   │   ├── c130.dat
+│       │   │   │   │   ├── c141.dat
+│       │   │   │   │   ├── c150.dat
+│       │   │   │   │   ├── c161.dat
+│       │   │   │   │   ├── c171.dat
+│       │   │   │   │   ├── c180.dat
+│       │   │   │   │   ├── c191.dat
+│       │   │   │   │   ├── c1a1.dat
+│       │   │   │   │   ├── c1b1.dat
+│       │   │   │   │   ├── c1c0.dat
+│       │   │   │   │   ├── c1d1.dat
+│       │   │   │   │   ├── c1e0.dat
+│       │   │   │   │   ├── c1f1.dat
+│       │   │   │   │   ├── c20.dat
+│       │   │   │   │   ├── c200.dat
+│       │   │   │   │   ├── c211.dat
+│       │   │   │   │   ├── c221.dat
+│       │   │   │   │   ├── c230.dat
+│       │   │   │   │   ├── c241.dat
+│       │   │   │   │   ├── c251.dat
+│       │   │   │   │   ├── c260.dat
+│       │   │   │   │   ├── c271.dat
+│       │   │   │   │   ├── c281.dat
+│       │   │   │   │   ├── c290.dat
+│       │   │   │   │   ├── c2a1.dat
+│       │   │   │   │   ├── c2b1.dat
+│       │   │   │   │   ├── c2c1.dat
+│       │   │   │   │   ├── c2d0.dat
+│       │   │   │   │   ├── c2e1.dat
+│       │   │   │   │   ├── c2f0.dat
+│       │   │   │   │   ├── c300.dat
+│       │   │   │   │   ├── c31.dat
+│       │   │   │   │   ├── c311.dat
+│       │   │   │   │   ├── c321.dat
+│       │   │   │   │   ├── c331.dat
+│       │   │   │   │   ├── c340.dat
+│       │   │   │   │   ├── c351.dat
+│       │   │   │   │   ├── c361.dat
+│       │   │   │   │   ├── c371.dat
+│       │   │   │   │   ├── c380.dat
+│       │   │   │   │   ├── c391.dat
+│       │   │   │   │   ├── c3a1.dat
+│       │   │   │   │   ├── c3b1.dat
+│       │   │   │   │   ├── c3c0.dat
+│       │   │   │   │   ├── c3d1.dat
+│       │   │   │   │   ├── c3e1.dat
+│       │   │   │   │   ├── c3f1.dat
+│       │   │   │   │   ├── c400.dat
+│       │   │   │   │   ├── c41.dat
+│       │   │   │   │   ├── c411.dat
+│       │   │   │   │   ├── c421.dat
+│       │   │   │   │   ├── c430.dat
+│       │   │   │   │   ├── c441.dat
+│       │   │   │   │   ├── c451.dat
+│       │   │   │   │   ├── c461.dat
+│       │   │   │   │   ├── c470.dat
+│       │   │   │   │   ├── c481.dat
+│       │   │   │   │   ├── c490.dat
+│       │   │   │   │   ├── c4a1.dat
+│       │   │   │   │   ├── c4b1.dat
+│       │   │   │   │   ├── c4c1.dat
+│       │   │   │   │   ├── c4d0.dat
+│       │   │   │   │   ├── c4e1.dat
+│       │   │   │   │   ├── c4f1.dat
+│       │   │   │   │   ├── c500.dat
+│       │   │   │   │   ├── c51.dat
+│       │   │   │   │   ├── c511.dat
+│       │   │   │   │   ├── c521.dat
+│       │   │   │   │   ├── c530.dat
+│       │   │   │   │   ├── c541.dat
+│       │   │   │   │   ├── c551.dat
+│       │   │   │   │   ├── c60.dat
+│       │   │   │   │   ├── c71.dat
+│       │   │   │   │   ├── c81.dat
+│       │   │   │   │   ├── c90.dat
+│       │   │   │   │   ├── ca1.dat
+│       │   │   │   │   ├── cb1.dat
+│       │   │   │   │   ├── cc0.dat
+│       │   │   │   │   ├── cd1.dat
+│       │   │   │   │   ├── ce1.dat
+│       │   │   │   │   └── cf0.dat
+│       │   │   │   ├── service.properties
+│       │   │   │   └── tmp
+│       │   │   └── temp
+│       │   └── e8d1c521-b10b-f9be-0000-016c70f609a1
+│       │       ├── cdsr
+│       │       │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │       │   ├── db.lck
+│       │       │   ├── dbex.lck
+│       │       │   ├── log
+│       │       │   │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │       │   │   ├── log.ctrl
+│       │       │   │   ├── log1.dat
+│       │       │   │   └── logmirror.ctrl
+│       │       │   ├── seg0
+│       │       │   │   ├── README_DO_NOT_TOUCH_FILES.txt
+│       │       │   │   ├── c10.dat
+│       │       │   │   ├── c101.dat
+│       │       │   │   ├── c111.dat
+│       │       │   │   ├── c121.dat
+│       │       │   │   ├── c130.dat
+│       │       │   │   ├── c141.dat
+│       │       │   │   ├── c150.dat
+│       │       │   │   ├── c161.dat
+│       │       │   │   ├── c171.dat
+│       │       │   │   ├── c180.dat
+│       │       │   │   ├── c191.dat
+│       │       │   │   ├── c1a1.dat
+│       │       │   │   ├── c1b1.dat
+│       │       │   │   ├── c1c0.dat
+│       │       │   │   ├── c1d1.dat
+│       │       │   │   ├── c1e0.dat
+│       │       │   │   ├── c1f1.dat
+│       │       │   │   ├── c20.dat
+│       │       │   │   ├── c200.dat
+│       │       │   │   ├── c211.dat
+│       │       │   │   ├── c221.dat
+│       │       │   │   ├── c230.dat
+│       │       │   │   ├── c241.dat
+│       │       │   │   ├── c251.dat
+│       │       │   │   ├── c260.dat
+│       │       │   │   ├── c271.dat
+│       │       │   │   ├── c281.dat
+│       │       │   │   ├── c290.dat
+│       │       │   │   ├── c2a1.dat
+│       │       │   │   ├── c2b1.dat
+│       │       │   │   ├── c2c1.dat
+│       │       │   │   ├── c2d0.dat
+│       │       │   │   ├── c2e1.dat
+│       │       │   │   ├── c2f0.dat
+│       │       │   │   ├── c300.dat
+│       │       │   │   ├── c31.dat
+│       │       │   │   ├── c311.dat
+│       │       │   │   ├── c321.dat
+│       │       │   │   ├── c331.dat
+│       │       │   │   ├── c340.dat
+│       │       │   │   ├── c351.dat
+│       │       │   │   ├── c361.dat
+│       │       │   │   ├── c371.dat
+│       │       │   │   ├── c380.dat
+│       │       │   │   ├── c391.dat
+│       │       │   │   ├── c3a1.dat
+│       │       │   │   ├── c3b1.dat
+│       │       │   │   ├── c3c0.dat
+│       │       │   │   ├── c3d1.dat
+│       │       │   │   ├── c3e1.dat
+│       │       │   │   ├── c3f1.dat
+│       │       │   │   ├── c400.dat
+│       │       │   │   ├── c41.dat
+│       │       │   │   ├── c411.dat
+│       │       │   │   ├── c421.dat
+│       │       │   │   ├── c430.dat
+│       │       │   │   ├── c441.dat
+│       │       │   │   ├── c451.dat
+│       │       │   │   ├── c461.dat
+│       │       │   │   ├── c470.dat
+│       │       │   │   ├── c481.dat
+│       │       │   │   ├── c490.dat
+│       │       │   │   ├── c4a1.dat
+│       │       │   │   ├── c4b1.dat
+│       │       │   │   ├── c4c1.dat
+│       │       │   │   ├── c4d0.dat
+│       │       │   │   ├── c4e1.dat
+│       │       │   │   ├── c4f1.dat
+│       │       │   │   ├── c500.dat
+│       │       │   │   ├── c51.dat
+│       │       │   │   ├── c511.dat
+│       │       │   │   ├── c521.dat
+│       │       │   │   ├── c530.dat
+│       │       │   │   ├── c541.dat
+│       │       │   │   ├── c551.dat
+│       │       │   │   ├── c60.dat
+│       │       │   │   ├── c71.dat
+│       │       │   │   ├── c81.dat
+│       │       │   │   ├── c90.dat
+│       │       │   │   ├── ca1.dat
+│       │       │   │   ├── cb1.dat
+│       │       │   │   ├── cc0.dat
+│       │       │   │   ├── cd1.dat
+│       │       │   │   ├── ce1.dat
+│       │       │   │   └── cf0.dat
+│       │       │   ├── service.properties
+│       │       │   └── tmp
+│       │       └── temp
+│       └── dataset
+│           ├── e8d1c521-b10b-f9be-0000-016c70da1527
+│           │   ├── field_discovered.json
+│           │   └── field_published.json
+│           └── e8d1c521-b10b-f9be-0000-016c70f492a9
+│               ├── field_discovered.json
+│               └── field_published.json
+└── zookeeper
+    ├── myid
+    ├── version-2
+    │   ├── log.1
+    │   ├── log.1088
+    │   ├── log.11ae
+    │   ├── log.210
+    │   ├── log.217
+    │   ├── log.32f
+    │   ├── log.431
+    │   └── log.e3
+    └── zookeeper_server.pid
+
+185 directories, 754 files
