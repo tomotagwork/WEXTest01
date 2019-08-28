@@ -1,0 +1,430 @@
+{
+  "responseHeader": {
+    "zkConnected": true,
+    "status": 0,
+    "QTime": 76,
+    "params": {
+      "carrot.url": "id",
+      "bigram.maxlength": "15",
+      "df": "body",
+      "hl.requiredFieldMatch": "true",
+      "hl": "true",
+      "echoParams": "ALL",
+      "indent": "true",
+      "fl": "*, [guard]",
+      "q.op": "AND",
+      "clustering.engine": "amaclustering",
+      "clustering.results": "true",
+      "defType": "adismax",
+      "qf": "body",
+      "carrot.outputSubClusters": "true",
+      "sow": "false",
+      "lang": "ja",
+      "wt": "json",
+      "carrot.produceSummary": "false",
+      "bigram": "on",
+      "hl.encoder": "html",
+      "hl.snippets": "4",
+      "q": "トランザクション",
+      "facet.stats": "none",
+      "SecurityFilteringRequest": "{\"filterDocMap\":null,\"datasetIdMap\":null,\"tags\":null,\"collectionId\":\"e8d1c521-b10b-f9be-0000-016ccd54e938\",\"documentLevelSecurity\":\"none\"}",
+      "clustering": "false",
+      "facet.mincount": "1",
+      "hl.method": "unified",
+      "carrot.title": "id",
+      "shortCircuit": "false",
+      "carrot.snippet": "body",
+      "hl.q": "トランザクション"
+    }
+  },
+  "response": {
+    "numFound": 5,
+    "start": 0,
+    "maxScore": 0.44749388,
+    "docs": [
+      {
+        "id": "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+        "body": [
+          "復旧見込み\n",
+          "復旧済み\n",
+          "不明\n",
+          "障害報告書\n2019年07月24日10時00分提出\n\t所属\n\tバルセロナ\n\t氏名\n\t莉緒寝 滅私\n\n\n以下のとおり、障害等が発生しましたので、報告いたします。\n\t障害発生\n日時場所\n\t発生日時\n\t2019/07/10 10:00\n\n\t\n\t派生場所\n\tオンライン区画2\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0002がA002で異常終了。\n\n\n\t\n\t経　　緯\n\t商品サービス「S002」を改修した後に障害発生\n\n\n\t\n\t影　　響\n\t商品サービスS002、取引サービスT001のエラー\n\n\n\t障害原因\n\t障害分類\n\t操作ミス\n\n\t\n\t原因内容\n\tモジュール置き換え操作ミスにより、実行モジュールが誤って削除された\n\n\n\t今回の対応\n\t適切なライブラリーに再作成したモジュールを配置\n\n\n\t今後の対策\n\t既知の問題\n\n\n\n（　1日　12時頃）\r\n\n\r\n\n（　　日　　時頃）\r\n\n\r\n\n\r\n\n"
+        ],
+        "Extension": [
+          ".doc"
+        ],
+        "CrawlerName": [
+          "FS_oneWexTest04"
+        ],
+        "CrawlerId": [
+          "e8d1c521-b10b-f9be-0000-016ccbae0dcc"
+        ],
+        "FileName": [
+          "障害報告書サンプル20190724.doc"
+        ],
+        "Title": [
+          "障害報告書サンプル20190724.doc"
+        ],
+        "CrawlSpaceId": [
+          "3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "ModifiedDate": [
+          "2019-08-15T01:58:20Z"
+        ],
+        "Date": [
+          "2019-08-15T01:58:20Z"
+        ],
+        "Directory": [
+          "/mnt/oneWexTest04/TroubleReport/チーム02"
+        ],
+        "FileSize": [
+          "56320"
+        ],
+        "_source": [
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc"
+        ],
+        "_delete_key": [
+          "_dse8d1c521-b10b-f9be-0000-016ccb94c8ff",
+          "_crw_e8d1c521-b10b-f9be-0000-016ccbae0dcc/3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "_build_ts": 1566812989752
+      },
+      {
+        "id": "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+        "body": [
+          "障害報告書\n2019年07月24日10時00分提出\n\t所属\n\tバルセロナ\n\t氏名\n\t莉緒寝 滅私\n\n\n以下のとおり、障害等が発生しましたので、報告いたします。\n\t障害発生\n日時場所\n\t発生日時\n\t2019/07/10 10:00\n\n\t\n\t派生場所\n\tオンライン区画2\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0002がA002で異常終了。\n\n\n\t\n\t経　　緯\n\t商品サービス「S002」を改修した後に障害発生\n\n\n\t\n\t影　　響\n\t商品サービスS002、取引サービスT001のエラー\n\n\n\t障害原因\n\t障害分類\n\t操作ミス\n\n\t\n\t原因内容\n\tモジュール置き換え操作ミスにより、実行モジュールが誤って削除された\n\n\n\t今回の対応\n\t適切なライブラリーに再作成したモジュールを配置\n\n\n\t今後の対策\n\t既知の問題\n\n\n\n（　1日　12時頃）\r\n\n\r\n\n（　　日　　時頃）\r\n\n\r\n\n\r\n\n",
+          "復旧済み\n",
+          "復旧見込み\n",
+          "不明\n"
+        ],
+        "Extension": [
+          ".doc"
+        ],
+        "CrawlerName": [
+          "FS_oneWexTest04"
+        ],
+        "CrawlerId": [
+          "e8d1c521-b10b-f9be-0000-016ccbae0dcc"
+        ],
+        "FileName": [
+          "障害報告書サンプル20190724.doc"
+        ],
+        "Title": [
+          "障害報告書サンプル20190724.doc"
+        ],
+        "CrawlSpaceId": [
+          "3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "ModifiedDate": [
+          "2019-08-15T01:58:20Z"
+        ],
+        "Date": [
+          "2019-08-15T01:58:20Z"
+        ],
+        "Directory": [
+          "/mnt/oneWexTest04/TroubleReport/チーム03"
+        ],
+        "FileSize": [
+          "56320"
+        ],
+        "_source": [
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc"
+        ],
+        "_delete_key": [
+          "_dse8d1c521-b10b-f9be-0000-016ccb94c8ff",
+          "_crw_e8d1c521-b10b-f9be-0000-016ccbae0dcc/3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "_build_ts": 1566812989752
+      },
+      {
+        "id": "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+        "body": [
+          "復旧済み\n",
+          "障害報告書\n2019年07月11日10時00分提出\n\t所属\n\tレアルマドリード\n\t氏名\n\t流伽 戻値\n\n\n以下のとおり、障害等が発生しましたので、報告いたします。\n\t障害発生\n日時場所\n\t発生日時\n\t2019/07/01 10:00\n\n\t\n\t派生場所\n\tオンライン区画1\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0001がA001でアベンド。\n\n\n\t\n\t経　　緯\n\t商品サービスS001改修後に障害発生\nメモリ使用率が異常な状態\n\n\n\t\n\t影　　響\n\t商品サービスS002、取引サービスT001がエラーで終了\n\n\n\t障害原因\n\t障害分類\n\tオペレーションミス\n\n\t\n\t原因内容\n\tモジュール置き換え操作ミスにより、実行モジュールが誤って削除された\n\n\n\t今回の対応\n\tモジュール再作成を行い適切なライブラリーに再配置\n\n\n\t今後の対策\n\t既知の問題のため特に対応不要\n\n\n\n（　1日　12時頃）\r\n\n\r\n\n（　　日　　時頃）\r\n\n\r\n\n\r\n\n",
+          "不明\n",
+          "復旧見込み\n"
+        ],
+        "Extension": [
+          ".doc"
+        ],
+        "CrawlerName": [
+          "FS_oneWexTest04"
+        ],
+        "CrawlerId": [
+          "e8d1c521-b10b-f9be-0000-016ccbae0dcc"
+        ],
+        "FileName": [
+          "障害報告書サンプル20190711.doc"
+        ],
+        "Title": [
+          "障害報告書サンプル20190711.doc"
+        ],
+        "CrawlSpaceId": [
+          "3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "ModifiedDate": [
+          "2019-08-15T01:59:48Z"
+        ],
+        "Date": [
+          "2019-08-15T01:59:48Z"
+        ],
+        "Directory": [
+          "/mnt/oneWexTest04/TroubleReport/チーム01"
+        ],
+        "FileSize": [
+          "56320"
+        ],
+        "_source": [
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc"
+        ],
+        "_delete_key": [
+          "_dse8d1c521-b10b-f9be-0000-016ccb94c8ff",
+          "_crw_e8d1c521-b10b-f9be-0000-016ccbae0dcc/3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "_build_ts": 1566812989752
+      },
+      {
+        "id": "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+        "body": [
+          "不明\n",
+          "復旧見込み\n",
+          "復旧済み\n",
+          "障害報告書\n2019年08月26日10時00分提出\n\t所属\n\tレアルマドリード\n\t氏名\n\t流伽 戻値\n\n\n以下のとおり、障害等が発生しましたので、報告いたします。\n\t障害発生\n日時場所\n\t発生日時\n\t2019/08/25 10:00\n\n\t\n\t派生場所\n\tオンライン区画1\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0001がA001でアベンド。\n\n\n\t\n\t経　　緯\n\t商品サービスS001改修後に障害発生\nメモリ使用率が異常な状態\n\n\n\t\n\t影　　響\n\t商品サービスS002、取引サービスT001がエラーで終了\nTRAN0002には影響なし\n\n\n\t障害原因\n\t障害分類\n\tオペレーションミス\n\n\t\n\t原因内容\n\tモジュール置き換え操作ミスにより、実行モジュールが誤って削除された\n\n\n\t今回の対応\n\tモジュール再作成を行い適切なライブラリーに再配置\n\n\n\t今後の対策\n\t既知の問題のため特に対応不要\n(A002アベンドの対応と同様)\n\n\n\n（　1日　12時頃）\r\n\n\r\n\n（　　日　　時頃）\r\n\n\r\n\n\r\n\n"
+        ],
+        "Extension": [
+          ".doc"
+        ],
+        "CrawlerName": [
+          "FS_oneWexTest04"
+        ],
+        "CrawlerId": [
+          "e8d1c521-b10b-f9be-0000-016ccbae0dcc"
+        ],
+        "FileName": [
+          "障害報告書サンプル20190826.doc"
+        ],
+        "Title": [
+          "障害報告書サンプル20190826.doc"
+        ],
+        "CrawlSpaceId": [
+          "3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "ModifiedDate": [
+          "2019-08-26T01:22:34Z"
+        ],
+        "Date": [
+          "2019-08-26T01:22:34Z"
+        ],
+        "Directory": [
+          "/mnt/oneWexTest04/TroubleReport/チーム01"
+        ],
+        "FileSize": [
+          "56832"
+        ],
+        "_source": [
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc",
+          "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc"
+        ],
+        "_delete_key": [
+          "_dse8d1c521-b10b-f9be-0000-016ccb94c8ff",
+          "_crw_e8d1c521-b10b-f9be-0000-016ccbae0dcc/3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "_build_ts": 1566812989752
+      },
+      {
+        "id": "file:///mnt/oneWexTest04/Case01/WEX%E6%A4%9C%E7%B4%A2%E6%A4%9C%E8%A8%BC%E7%94%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB01.xlsx",
+        "body": [
+          "検証項目タブ\n\t\t検索対象として拾えるか ケンサク タイショウ ヒロ\n\t\t\tセル中の文字 チュウ モジ\n\t\t\tオブジェクト中の文字(テキストオブジェクトなど) チュウ モジ\n\t\t\tタブ名 メイ\n\t\t\tファイル名 メイ\n\t\t複数のタブがある場合拾えるか フクスウ バアイ ヒロ\n\t\t単語の途中でセルが分かれる場合 タンゴ トチュウ ワ バアイ\n\t\t\t左右のセルで分割 サユウ ブンカツ\n\t\t\t上下のセルで分割 ジョウゲ ブンカツ\n\n図形中の文字\n春はあけぼの\n\nWatsonタブ\n\t\tWatson Explorer oneWEX のドキュメンテーションへようこそ。 今後の分析アプリケーションに必要なのは、共通した情報アーキテクチャーに基づくハイブリッド・デプロイメントです。 Watson Explorer には、探索とコンテンツ分析を組み合わせた真の統合アーキテクチャーである oneWEX が導入されています。 この新しいコンテナー・ベースのアーキテクチャーはクラウド対応です。 そのため、今まで以上に簡単に Watson Explorer をスケーラブルにデプロイできるようになりました。 oneWEX には、構造化されていないダーク・データから従来より簡単に洞察を得るコグニティブ機能が追加されています。\n\t\tIBM Watson® Explorer は、高度な自然言語処理 (NLP) や機械学習 (ML) に基づくコグニティブ・コンピューティングにより、基本検索から自然かつ累積的に進化したxxxを導入しています。この進化の目標は、情報や業務に関する洞察を配信する際の速度と正確度を向上させることです。\n\t\tWatson™ Explorer は、検索とコンテンツ分析を組み合わせることによって、ユーザーが非構造化情報を見つけて理解できるよう支援します。ユーザーはその情報を使用して、作業を効率化し、急所となる時点でより的確で信頼できる意思決定を行うことができます。 Watson Explorer では、以下のことができます。\n\n\t\tコグニティブ探索: すべての組織のデータを形式、格納場所、管理場所にかかわらず、安全に接続したり、検索したり、探索したりできます (既知の項目の検出)。\n\t\tコグニティブ洞察: 仮説に頼らない検出方法を使用した高度なコンテンツ分析により、構造化されていないダーク・データから洞察を得られます (未知の項目の発見)。\n\t\tコグニティブ・アドバイス: ディス\n\t\tカバリー・プロセスにおける後続の各ステップで、システムからアドバイスが提供されます。\n\t\tその方法について説明します。\n\t\tコンポー\tネントが導入されています。\n\n\t\tWatson Explorer Admin Console は、コンテンツ管理ツールです。管理者はこれを使用して、分析担当者が使用するデータ・セットとコレクションを作成したり、アノテーターと分類器を定義したり、クローラーを起動してコレクションに索引付けしたりすることができます。\n\t\tWatson Explorer Content Miner は、コンテンツ・マイニング・ツールです。分析担当者はこれを使用して、コレクションの分析と作成を行うことができます。\n\n\nCICSタブ\n\t\tCICS Transaction Server とは、z/OS という IBM メインフレーム・オペレーティング・システムで実行される強力な混合言語アプリケーション・サーバーであり、通常はシンプルに CICS と呼ばれます。\n\t\tアプリケーション・サーバーとは、アプリケーションをホストする環境を提供するものです。 \n\t\tセキュリティー、トランザクション性、新規アプリケーションと既存アプリケーションの間のデータ交換など、多くの課題を解決するサービスを備えています。 \n\t\tこのような問題に対処するエンタープライズ・グレードのカスタム・ソリューションを開発することは難しく、アプリケーションの本来のビジネス上の目的のために注力する時間が奪われる可能性があります。 \n\t\t重要な点は、CICS は、このようなサービスを、さまざまなプログラミング言語で作成されたxxxから構成されるアプリケーションに提供することができるという点です。\n\t\tCICS は、銀行、運輸、小売、保険など、多くの業種のさまざまな企業のホストでアプリケーション・サーバーとして使用されています。 \n\t\tCICS で実行されるアプリケーションは、所有ビジネスの中核を成すものであることが多く、ビジネスの成功に必要不可欠なアプリケーションです。 このようなアプリケーションに障害が発生した場合、予期しないダウン時間やエラーにより、収益が大幅に減少したり評判が影響を受けたりする可能性があります。 \n\t\tそれほど重要であるため、これらは、CICS などの、可用性が高く信頼できる堅固なプラットフォームで実行する必要があります。\n\n\n"
+        ],
+        "Extension": [
+          ".xlsx"
+        ],
+        "CrawlerName": [
+          "FS_oneWexTest04"
+        ],
+        "CrawlerId": [
+          "e8d1c521-b10b-f9be-0000-016ccbae0dcc"
+        ],
+        "FileName": [
+          "WEX検索検証用ファイル01.xlsx"
+        ],
+        "Title": [
+          "WEX検索検証用ファイル01.xlsx"
+        ],
+        "CrawlSpaceId": [
+          "3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "ModifiedDate": [
+          "2019-06-20T05:40:13Z"
+        ],
+        "Date": [
+          "2019-06-20T05:40:13Z"
+        ],
+        "Directory": [
+          "/mnt/oneWexTest04/Case01"
+        ],
+        "FileSize": [
+          "16317"
+        ],
+        "_source": [
+          "file:///mnt/oneWexTest04/Case01/WEX%E6%A4%9C%E7%B4%A2%E6%A4%9C%E8%A8%BC%E7%94%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB01.xlsx",
+          "file:///mnt/oneWexTest04/Case01/WEX%E6%A4%9C%E7%B4%A2%E6%A4%9C%E8%A8%BC%E7%94%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB01.xlsx"
+        ],
+        "_delete_key": [
+          "_dse8d1c521-b10b-f9be-0000-016ccb94c8ff",
+          "_crw_e8d1c521-b10b-f9be-0000-016ccbae0dcc/3bb03c5b-9017-4996-8c7d-ad47a31fbcae"
+        ],
+        "_build_ts": 1566812989752
+      }
+    ]
+  },
+  "highlighting": {
+    "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A002/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc": {
+      "body": [
+        "障害発生&#10;日時場所&#10;&#9;発生日時&#10;&#9;2019&#x2F;07&#x2F;10&#32;10&#58;00&#10;&#10;&#9;&#10;&#9;派生場所&#10;&#9;オンライン区画2&#10;&#10;&#9;障害状況&#10;&#9;復旧状況&#10;&#9;&#10;&#10;&#10;&#10;&#10;&#9;&#10;&#9;被害状況&#10;&#9;領域01&#32;の<em>トランザクション</em>TRAN0002がA002で異常終了。&#10;&#10;&#10;&#9;&#10;&#9;"
+      ],
+      "views": {
+        "body": [
+          {
+            "content": "障害発生\n日時場所\n\t発生日時\n\t2019/07/10 10:00\n\n\t\n\t派生場所\n\tオンライン区画2\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0002がA002で異常終了。\n\n\n\t\n\t",
+            "span": [
+              98,
+              218
+            ],
+            "hits": [
+              [
+                185,
+                193
+              ]
+            ],
+            "positives": [],
+            "negatives": []
+          }
+        ]
+      }
+    },
+    "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A003/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190724.doc": {
+      "body": [
+        "障害発生&#10;日時場所&#10;&#9;発生日時&#10;&#9;2019&#x2F;07&#x2F;10&#32;10&#58;00&#10;&#10;&#9;&#10;&#9;派生場所&#10;&#9;オンライン区画2&#10;&#10;&#9;障害状況&#10;&#9;復旧状況&#10;&#9;&#10;&#10;&#10;&#10;&#10;&#9;&#10;&#9;被害状況&#10;&#9;領域01&#32;の<em>トランザクション</em>TRAN0002がA002で異常終了。&#10;&#10;&#10;&#9;&#10;&#9;"
+      ],
+      "views": {
+        "body": [
+          {
+            "content": "障害発生\n日時場所\n\t発生日時\n\t2019/07/10 10:00\n\n\t\n\t派生場所\n\tオンライン区画2\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0002がA002で異常終了。\n\n\n\t\n\t",
+            "span": [
+              81,
+              201
+            ],
+            "hits": [
+              [
+                168,
+                176
+              ]
+            ],
+            "positives": [],
+            "negatives": []
+          }
+        ]
+      }
+    },
+    "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190711.doc": {
+      "body": [
+        "障害発生&#10;日時場所&#10;&#9;発生日時&#10;&#9;2019&#x2F;07&#x2F;01&#32;10&#58;00&#10;&#10;&#9;&#10;&#9;派生場所&#10;&#9;オンライン区画1&#10;&#10;&#9;障害状況&#10;&#9;復旧状況&#10;&#9;&#10;&#10;&#10;&#10;&#10;&#9;&#10;&#9;被害状況&#10;&#9;領域01&#32;の<em>トランザクション</em>TRAN0001がA001でアベンド。&#10;&#10;&#10;&#9;&#10;&#9;"
+      ],
+      "views": {
+        "body": [
+          {
+            "content": "障害発生\n日時場所\n\t発生日時\n\t2019/07/01 10:00\n\n\t\n\t派生場所\n\tオンライン区画1\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0001がA001でアベンド。\n\n\n\t\n\t",
+            "span": [
+              89,
+              209
+            ],
+            "hits": [
+              [
+                176,
+                184
+              ]
+            ],
+            "positives": [],
+            "negatives": []
+          }
+        ]
+      }
+    },
+    "file:///mnt/oneWexTest04/TroubleReport/%E3%83%81%E3%83%BC%E3%83%A001/%E9%9A%9C%E5%AE%B3%E5%A0%B1%E5%91%8A%E6%9B%B8%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB20190826.doc": {
+      "body": [
+        "障害発生&#10;日時場所&#10;&#9;発生日時&#10;&#9;2019&#x2F;08&#x2F;25&#32;10&#58;00&#10;&#10;&#9;&#10;&#9;派生場所&#10;&#9;オンライン区画1&#10;&#10;&#9;障害状況&#10;&#9;復旧状況&#10;&#9;&#10;&#10;&#10;&#10;&#10;&#9;&#10;&#9;被害状況&#10;&#9;領域01&#32;の<em>トランザクション</em>TRAN0001がA001でアベンド。&#10;&#10;&#10;&#9;&#10;&#9;"
+      ],
+      "views": {
+        "body": [
+          {
+            "content": "障害発生\n日時場所\n\t発生日時\n\t2019/08/25 10:00\n\n\t\n\t派生場所\n\tオンライン区画1\n\n\t障害状況\n\t復旧状況\n\t\n\n\n\n\n\t\n\t被害状況\n\t領域01 のトランザクションTRAN0001がA001でアベンド。\n\n\n\t\n\t",
+            "span": [
+              100,
+              220
+            ],
+            "hits": [
+              [
+                187,
+                195
+              ]
+            ],
+            "positives": [],
+            "negatives": []
+          }
+        ]
+      }
+    },
+    "file:///mnt/oneWexTest04/Case01/WEX%E6%A4%9C%E7%B4%A2%E6%A4%9C%E8%A8%BC%E7%94%A8%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB01.xlsx": {
+      "body": [
+        "セキュリティー、<em>トランザクション</em>性、新規アプリケーションと既存アプリケーションの間のデータ交換など、多くの課題を解決するサービスを備えています。&#32;&#10;&#9;&#9;"
+      ],
+      "views": {
+        "body": [
+          {
+            "content": "セキュリティー、トランザクション性、新規アプリケーションと既存アプリケーションの間のデータ交換など、多くの課題を解決するサービスを備えています。 \n\t\t",
+            "span": [
+              1539,
+              1615
+            ],
+            "hits": [
+              [
+                1547,
+                1555
+              ]
+            ],
+            "positives": [],
+            "negatives": []
+          }
+        ]
+      }
+    }
+  }
+}
