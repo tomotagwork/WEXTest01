@@ -1,0 +1,56 @@
+[
+  {
+    "ruleId": "5d537f73-0549-402b-87a2-b859a86d3c7b",
+    "name": "IMSMessage",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "DFS[0-9]{3,4}[AEIWX]?",
+    "facetPath": ".IMSMessage",
+    "facetValue": "$0"
+  },
+  {
+    "ruleId": "d13bc179-d63e-49b1-9ede-f8a53fc96faf",
+    "name": "Db2Message",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "DSN[A-Z0-9][0-9]{3,5}[AEI]",
+    "facetPath": ".Db2Message",
+    "facetValue": "$0"
+  },
+  {
+    "ruleId": "681858bf-c0f6-4a8c-a9ac-1e7532912897",
+    "name": "Db2SQLCode",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "SQL[+-]?[0-9]{3,5}",
+    "facetPath": ".Db2SQLCode",
+    "facetValue": "$0"
+  },
+  {
+    "ruleId": "3db841e7-46da-4650-9d0c-b44b243b74e6",
+    "name": "ApplServiceID",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "S[0-9]{2}[A-Z]{2}[0-9]{3}",
+    "facetPath": ".ApplServiceID",
+    "facetValue": "$0"
+  },
+  {
+    "ruleId": "e66ec7eb-c881-41f3-8846-50047f2f3f55",
+    "name": "ApplTransactionID",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "T[A-Z]{3}[0-9]{4}",
+    "facetPath": ".ApplTransactionID",
+    "facetValue": "$0"
+  },
+  {
+    "ruleId": "9c178824-8606-4fc8-875e-794839df4ab9",
+    "name": "ApplAbendCode",
+    "description": null,
+    "matchType": "Document",
+    "pattern": "A[0-9]{3}",
+    "facetPath": ".ApplAbendCode",
+    "facetValue": "$0"
+  }
+]
